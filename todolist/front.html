@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .rainbow-bar {
+            width: 30px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            border: 5px solid black;
+        }
+
+        .rainbow-bar div {
+            flex: 1;
+        }
+
+        .red { background-color: red; }
+        .orange { background-color: orange; }
+        .yellow { background-color: yellow; }
+        .green { background-color: green; }
+        .blue { background-color: blue; }
+        .indigo { background-color: indigo; }
+        .violet { background-color: violet; }
+
+        .main-content {
+            flex-grow: 1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 36px;
+            color: #333;
+            background-color: #ddd;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+}
+
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 80%;
+            max-width: 900px;
+            margin: 50px auto;
+        }
+
+        .info-box, .info-box3 {
+            width: 45%;
+            padding: 15px;
+            border: 3px dashed;
+            background-color: #FFF5EE;
+            font-family: 'Dancing Script', cursive;
+            font-size: 18px;
+            text-align: left;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-box { border-color: #8A2BE2; }
+        .info-box3 { border-color: #e22bd6; }
+
+        .hexagon-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .hexagon {
+            width: 100px;
+            height: 110px;
+            background-color: #8A2BE2;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #8A2BE2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #6A1BB2;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .info-box, .info-box3 {
+                width: 90%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="rainbow-bar">
+        <div class="red"></div>
+        <div class="orange"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="indigo"></div>
+        <div class="violet"></div>
+    </div>
+
+    <div class="main-content">
+        <h1>My To-Do List</h1>
+
+        <div class="container">
+            <div class="info-box">
+                <h3>Welcome to Your To-Do List</h3>
+                <p>Stay organized and productive! ✨ Add, edit, and track your tasks easily.</p>
+                <p>Click "Click Me" to start managing your tasks! 💡</p>
+                <p>Interactive shapes to understand your work progress!</p>
+                <br>
+                <p>Double-click on "New Task" to add your own task and set a custom schedule. ⏳</p>
+            </div>
+            <div class="info-box3">
+                <h3>Tips for an Effective To-Do List</h3>
+                <p>✔ Prioritize tasks by importance and urgency.</p>
+                <p>✔ Break large tasks into smaller steps.</p>
+                <p>✔ Set deadlines to stay on track and motivated. ⏳</p>
+                <p>✔ Regularly review and adjust your list.</p>
+                <p>✔ Celebrate small wins to stay motivated! 🎉</p>
+            </div>
+        </div>
+
+        <div class="hexagon-container">
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+            <div class="hexagon"></div>
+        </div>
+
+        <a href="index.html">
+            <button>Click Me</button>
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="todo-container">
+        <input type="text" id="search-box" placeholder="Search tasks..." onkeyup="searchTasks()">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Details</th>
+                    <th>Shapes</th>
+                    <th>Actions</th>
+                    <th>Delete Task</th> <!-- Added Delete Column -->
+                </tr>
+            </thead>
+            <tbody id="task-list">
+            </tbody>
+        </table>
+
+        <button class="add-task-btn" onclick="addTask()">+ Add Task</button>
+    </div>
+
+    <!-- Progress Key -->
+    <div class="progress-key">
+        <h3>Progress Key</h3>
+        <p><span class="shape circle"></span> Not Started</p>
+        <p><span class="shape square"></span> In Progress</p>
+        <p><span class="shape triangle"></span> Completed</p>
+    </div>
+
+</body>
+</html>

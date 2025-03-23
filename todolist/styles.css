@@ -1,0 +1,126 @@
+/* General Table Styling */
+table {
+   
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid black; /* Separate borders for each column */
+   
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #E6E6FA; /* Soft lavender */
+    color: black;
+    font-weight: bold;
+}
+
+/* Add Task Button */
+.add-task-btn {
+    background-color: black;
+    color: white;
+    padding: 100px;
+    margin-top: 10px;
+    padding-top:10px;
+    padding-left:600px;
+    padding-right:600px; 
+    padding-bottom:10px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+/* Color Box */
+.color-box {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    margin-right: 5px;
+    cursor: pointer;
+    vertical-align: middle;
+    border: 1px solid black;
+}
+
+.green {
+    background-color: green !important;
+}
+
+/* Shapes */
+.shape {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.square {
+    background-color: orange;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 15px solid green;
+}
+
+/* Delete Column */
+.delete-column {
+    text-align: center;
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+/* 🔹 Cute Progress Key */
+.progress-key {
+    width: 250px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 3px dashed #8A2BE2; /* Cute outlined border */
+    background-color: #FFF5EE; /* Light peach background */
+    font-family: 'Dancing Script', cursive; /* Stylish font */
+    font-size: 18px;
+    text-align: left;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.progress-key h3 {
+    text-align: center;
+    font-size: 22px;
+    color: #4B0082;
+    font-weight: bold;
+}
+
+.progress-key p {
+    margin: 8px 0;
+}
+.search-box{
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px
+}
